@@ -22,7 +22,7 @@ jobs:
     - name: Build and push Docker images
       uses: docker/build-push-action@v5.1.0
       with:
-        build-contexts: .
+        context: .
         file: ./Dockerfile
         push: true
         tags: cassiofbdev/curso_alura:${{ github.ref_name }}
